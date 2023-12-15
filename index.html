@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>drumKitMachine</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/✅" />
 </head>
+
 <body>
-    <header class="header-one">Click to Play Any drum kit sound </header>
+<div class="keys">
+  <div data-key="65" class="key"><kbd>A</kbd>
+  <span class="sound">Clap</span>
+  </div>
 
-    <main>
-        <div class="keys">
-            <div data-key="65" class="key">
-                <kbd>A</kbd>
-                <span class="sound" >Clap</span>
-            </div>
-
-        </div>
-
-        <audio data-key="65" src=""></audio>
-    </main>
-    
+  <div data-key="83" class="key"><kbd>S</kbd>
+    <span class="sound">Snap</span>
+  </div>
+  <div data-key="68" class="key"><kbd>D</kbd>
+    <span class="sound">Snap</span>
+  </div>
+  <div data-key="70" class="key"><kbd>F</kbd>
+    <span class="sound">Kick</span>
+  </div>
+  <div data-key="71" class="key"><kbd>G</kbd>
+    <span class="sound">Reverb</span>
+  </div>
+  <div data-key="72" class="key"><kbd>H</kbd>
+    <span class="sound">Perc</span>
+  </div>
+  <div data-key="74" class="key"><kbd>I</kbd>
+    <span class="sound">Perc</span>
+  </div>
+</div>
+<audio  data-key="65" src="/samples/Clap 09.wav"></audio>
+<audio data-key="83" src="/samples/FX Reverb Snap.wav"></audio>
+<audio data-key="68" src="/samples/Big Snare 2.wav"></audio>
+<audio data-key="70" src="/samples/Kick (Afrojack).wav"></audio>
+<audio data-key="71" src="/samples/FX Reverb Snap.wav"></audio>
+<audio data-key="72" src="/samples/Big Snare 2.wav"></audio>
+<audio data-key="74" src="/samples/Perc 02.wav"></audio>
+<script src="script.js"></script>
 </body>
 </html>

@@ -37,9 +37,12 @@ kbd {
   text-shadow: 0 0 0.5rem black;
 
 }
-:playing{
+
+
+.playing{
   transform: scale(1.1);
   border-color: #ffc600;
+  /* 0 is horizontal offset, 0 is avertical off set and 1 rem blur of radius with yellow border color */
   box-shadow: 0 0 1rem #ffc600;
 
 }
@@ -51,4 +54,57 @@ kbd {
 }
 
 
+/* media queries */
 
+
+@media screen and (min-width: 600px) {
+  .keys {
+    color: red;
+  }  
+}
+
+
+
+
+
+/* 
+media queries */
+
+
+/* Default styles for all screen sizes */
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+} */
+
+/* Styles for larger screens */
+/* @media screen and (min-width: 600px) {
+  .keys {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .key {
+    width: 10rem;
+    margin: 1rem;
+  }
+} */
+
+/* Styles for smaller screens (e.g., mobile devices) */
+/* @media screen and (max-width: 599px) {
+  .keys {
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .key {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+} */

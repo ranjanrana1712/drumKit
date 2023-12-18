@@ -25,3 +25,5 @@ function removeTransition(e) {
 const keys = document.querySelectorAll('.key');//converting NodeList into an array using Array.from()
 keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // adds transitionend event listener to each element.
 window.addEventListener('keydown', playSound);
+
+window.addEventListener('click', playSound);
